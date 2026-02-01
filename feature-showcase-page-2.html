@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Flash SEO - Feature Showcase (Dark Mode)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3b82f6", // Vibrant high-contrast blue
+                        "charcoal": "#121212", // Deep professional charcoal background
+                        "surface": "#1e1e1e", // Slightly lighter charcoal for cards
+                        "border-color": "#2a2a2a",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-effect {
+            background: rgba(18, 18, 18, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #60a5fa, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-charcoal font-display text-slate-100 transition-colors duration-300">
+<header class="sticky top-0 z-50 glass-effect border-b border-border-color px-6 py-4">
+<div class="max-w-[1200px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="bg-primary p-1.5 rounded-lg text-white">
+<span class="material-symbols-outlined text-2xl">bolt</span>
+</div>
+<h1 class="text-xl font-black tracking-tight text-white">Flash SEO</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold text-slate-400 hover:text-primary transition-colors" href="#">Product</a>
+<a class="text-sm font-semibold text-primary" href="#">Features</a>
+<a class="text-sm font-semibold text-slate-400 hover:text-primary transition-colors" href="#">Pricing</a>
+<a class="text-sm font-semibold text-slate-400 hover:text-primary transition-colors" href="#">Resources</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="px-4 py-2 text-sm font-bold text-slate-300 hover:text-white transition-colors">Log In</button>
+<button class="px-5 py-2.5 text-sm font-bold bg-primary text-white rounded-lg hover:brightness-110 transition-all shadow-lg shadow-primary/20">Get Started</button>
+</div>
+</div>
+</header>
+<section class="py-24 px-6">
+<div class="max-w-[1200px] mx-auto text-center">
+<span class="inline-block px-4 py-1.5 bg-primary/10 border border-primary/20 text-primary text-xs font-bold rounded-full mb-8 tracking-widest uppercase">Platform Overview</span>
+<h2 class="text-5xl md:text-7xl font-black tracking-tight mb-8 leading-tight text-white">
+            Powerful tools for the <br/> <span class="text-gradient">Modern Marketer.</span>
+</h2>
+<p class="text-xl text-slate-400 max-w-2xl mx-auto mb-12">
+            Unlock the full potential of your digital presence with our comprehensive suite of SEO and content intelligence tools.
+        </p>
+<div class="flex flex-col sm:flex-row justify-center gap-5">
+<button class="px-10 py-5 bg-primary text-white font-bold rounded-xl text-lg flex items-center justify-center gap-2 hover:shadow-2xl hover:shadow-primary/30 transition-all transform hover:-translate-y-1">
+                Start Your Free Trial <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="px-10 py-5 bg-surface border border-border-color font-bold rounded-xl text-lg flex items-center justify-center gap-2 hover:bg-slate-800 transition-all text-white">
+                Watch Demo
+            </button>
+</div>
+</div>
+</section>
+<section class="py-24 border-t border-border-color">
+<div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined font-bold">search_check</span>
+<span class="text-sm font-bold tracking-widest uppercase">Analyze</span>
+</div>
+<h3 class="text-4xl font-black leading-tight text-white">SEO Scanner: Instant Site Health Reports</h3>
+<p class="text-lg text-slate-400">
+                Identify technical errors, broken links, and hidden optimization opportunities in seconds. Our scanner crawls your site with engine-grade precision.
+            </p>
+<ul class="space-y-5 mb-4">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-green-400 mt-1">check_circle</span>
+<div>
+<p class="font-bold text-white">Real-time Pass/Fail Checklist</p>
+<p class="text-sm text-slate-500">Fix high-priority issues with actionable technical guidance.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-green-400 mt-1">check_circle</span>
+<div>
+<p class="font-bold text-white">Core Web Vitals Monitoring</p>
+<p class="text-sm text-slate-500">Track LCP, FID, and CLS scores across desktop and mobile.</p>
+</div>
+</li>
+</ul>
+<button class="w-fit px-8 py-4 bg-primary text-white font-bold rounded-lg hover:shadow-lg hover:shadow-primary/25 transition-all flex items-center gap-2">
+                Try Scanner Now <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+<div class="relative">
+<div class="absolute -inset-8 bg-primary/10 blur-3xl rounded-full"></div>
+<div class="relative bg-surface rounded-2xl shadow-2xl border border-border-color overflow-hidden p-8">
+<div class="flex items-center justify-between mb-8 border-b border-border-color pb-6">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full border-4 border-primary border-r-transparent flex items-center justify-center">
+<span class="text-lg font-black text-white">84</span>
+</div>
+<div>
+<h4 class="font-bold text-white">Site Health Score</h4>
+<p class="text-xs text-slate-500 uppercase tracking-tighter">Last updated: 2 mins ago</p>
+</div>
+</div>
+<span class="px-3 py-1 bg-green-500/10 text-green-400 text-[10px] font-black rounded-full border border-green-500/20">HEALTHY</span>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 bg-charcoal rounded-xl border border-border-color">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-red-500">cancel</span>
+<span class="text-sm font-medium text-slate-300">Broken Internal Links</span>
+</div>
+<span class="text-xs font-bold text-red-500">3 Found</span>
+</div>
+<div class="flex items-center justify-between p-4 bg-charcoal rounded-xl border border-border-color">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-green-400">check_circle</span>
+<span class="text-sm font-medium text-slate-300">HTTPS Status Code</span>
+</div>
+<span class="text-xs font-bold text-green-400">Secure</span>
+</div>
+<div class="flex items-center justify-between p-4 bg-charcoal rounded-xl border border-border-color">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-yellow-500">warning</span>
+<span class="text-sm font-medium text-slate-300">Missing Meta Descriptions</span>
+</div>
+<span class="text-xs font-bold text-yellow-500">12 Warning</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface/30">
+<div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="order-2 lg:order-1 relative">
+<div class="absolute -inset-8 bg-primary/5 blur-3xl rounded-full"></div>
+<div class="relative bg-surface rounded-2xl shadow-2xl border border-border-color overflow-hidden">
+<div class="bg-charcoal px-6 py-4 flex items-center justify-between border-b border-border-color">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">auto_awesome</span>
+<span class="text-[10px] font-black tracking-widest text-slate-400 uppercase">AI Content Assistant</span>
+</div>
+<div class="flex gap-1.5">
+<div class="w-2 h-2 rounded-full bg-slate-700"></div>
+<div class="w-2 h-2 rounded-full bg-slate-700"></div>
+<div class="w-2 h-2 rounded-full bg-slate-700"></div>
+</div>
+</div>
+<div class="p-8">
+<div class="grid grid-cols-2 gap-5 mb-8">
+<div class="p-5 border border-primary/30 bg-primary/5 rounded-2xl text-center">
+<p class="text-[10px] text-primary font-black mb-1 uppercase tracking-widest">AEO Score</p>
+<p class="text-3xl font-black text-white">92%</p>
+<p class="text-[9px] text-slate-500 mt-1">Answer Engine Optimized</p>
+</div>
+<div class="p-5 border border-border-color bg-charcoal rounded-2xl text-center">
+<p class="text-[10px] text-slate-500 font-black mb-1 uppercase tracking-widest">GEO Score</p>
+<p class="text-3xl font-black text-white">78%</p>
+<p class="text-[9px] text-slate-500 mt-1">Generative Visibility</p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-center text-[10px] font-bold text-slate-500 mb-1">
+<span>RELEVANCY</span>
+<span>80%</span>
+</div>
+<div class="h-2.5 w-full bg-charcoal rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[80%]"></div>
+</div>
+<div class="flex justify-between items-center text-[10px] font-bold text-slate-500 mb-1">
+<span>CLARITY</span>
+<span>95%</span>
+</div>
+<div class="h-2.5 w-full bg-charcoal rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[95%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 flex flex-col gap-6">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined font-bold">auto_awesome</span>
+<span class="text-sm font-bold tracking-widest uppercase">Optimize</span>
+</div>
+<h3 class="text-4xl font-black leading-tight text-white">AI Content Optimizer: Rank for AI &amp; Humans</h3>
+<p class="text-lg text-slate-400">
+                Stay ahead of the curve with metrics designed for the next generation of search. We analyze how Answer Engines interpret your content.
+            </p>
+<ul class="space-y-5 mb-4">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">psychology</span>
+<div>
+<p class="font-bold text-white">AEO &amp; GEO Metrics</p>
+<p class="text-sm text-slate-500">Ensure your content appears in voice search and AI chat responses.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">edit_note</span>
+<div>
+<p class="font-bold text-white">Smart Readability Grading</p>
+<p class="text-sm text-slate-500">Analyze sentiment and clarity to keep human readers engaged longer.</p>
+</div>
+</li>
+</ul>
+<button class="w-fit px-8 py-4 bg-primary text-white font-bold rounded-lg hover:brightness-110 transition-all flex items-center gap-2">
+                Optimize Now <span class="material-symbols-outlined text-sm">rocket_launch</span>
+</button>
+</div>
+</div>
+</section>
+<section class="py-24">
+<div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined font-bold">insights</span>
+<span class="text-sm font-bold tracking-widest uppercase">Discover</span>
+</div>
+<h3 class="text-4xl font-black leading-tight text-white">Keyword Explorer: Data-Driven Discovery</h3>
+<p class="text-lg text-slate-400">
+                Stop guessing. Use hard data to find high-value, low-competition keywords that drive actual conversion and business growth.
+            </p>
+<div class="grid grid-cols-2 gap-5">
+<div class="p-6 bg-surface border border-border-color rounded-2xl">
+<span class="text-3xl font-black text-primary">2.4M+</span>
+<p class="text-xs font-bold text-slate-500 uppercase mt-1 tracking-widest">Keyword Database</p>
+</div>
+<div class="p-6 bg-surface border border-border-color rounded-2xl">
+<span class="text-3xl font-black text-primary">120+</span>
+<p class="text-xs font-bold text-slate-500 uppercase mt-1 tracking-widest">Global Regions</p>
+</div>
+</div>
+<button class="w-fit px-8 py-4 bg-primary text-white font-bold rounded-lg hover:brightness-110 transition-all flex items-center gap-2">
+                Explore Keywords <span class="material-symbols-outlined text-sm">search</span>
+</button>
+</div>
+<div class="relative">
+<div class="absolute -inset-10 bg-primary/10 blur-3xl rounded-full"></div>
+<div class="relative bg-surface rounded-2xl shadow-2xl border border-border-color overflow-hidden">
+<div class="p-8">
+<div class="flex items-center gap-3 mb-8 text-sm font-black text-white">
+<span class="material-symbols-outlined text-primary">query_stats</span>
+                        Volume Trends: "AI Marketing Tool"
+                    </div>
+<div class="flex items-end gap-2 h-40 mb-10">
+<div class="w-full bg-primary/20 h-[30%] rounded-t-lg"></div>
+<div class="w-full bg-primary/30 h-[45%] rounded-t-lg"></div>
+<div class="w-full bg-primary/40 h-[60%] rounded-t-lg"></div>
+<div class="w-full bg-primary/60 h-[55%] rounded-t-lg"></div>
+<div class="w-full bg-primary h-[85%] rounded-t-lg"></div>
+<div class="w-full bg-white h-[100%] rounded-t-lg"></div>
+</div>
+<div class="grid grid-cols-2 gap-5">
+<div class="p-4 bg-green-500/10 border border-green-500/20 rounded-xl text-center">
+<p class="text-[10px] font-black text-green-400 mb-1 uppercase tracking-widest">Difficulty</p>
+<p class="text-2xl font-black text-green-400">12</p>
+<p class="text-[9px] text-green-400/60 font-bold">VERY EASY</p>
+</div>
+<div class="p-4 bg-primary/10 border border-primary/20 rounded-xl text-center">
+<p class="text-[10px] font-black text-primary mb-1 uppercase tracking-widest">Volume</p>
+<p class="text-2xl font-black text-white">14.5K</p>
+<p class="text-[9px] text-slate-500 font-bold">AVG / MO</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface/30">
+<div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="order-2 lg:order-1 relative">
+<div class="absolute -inset-8 bg-primary/5 blur-3xl rounded-full"></div>
+<div class="relative bg-surface rounded-2xl shadow-2xl border border-border-color overflow-hidden">
+<div class="p-8">
+<div class="flex items-center justify-between mb-10">
+<h4 class="font-black text-xl text-white">Agency Workspace</h4>
+<button class="p-2.5 bg-charcoal border border-border-color rounded-xl text-slate-400 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">settings</span>
+</button>
+</div>
+<div class="space-y-6">
+<div class="flex items-center justify-between p-4 bg-charcoal/50 rounded-2xl border border-border-color/50">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-400 font-black">JD</div>
+<div>
+<p class="text-sm font-black text-white">John Doe</p>
+<p class="text-xs text-slate-500 font-medium">Admin</p>
+</div>
+</div>
+<span class="px-2.5 py-1 bg-primary/20 text-primary text-[10px] font-black rounded-full border border-primary/20">Active</span>
+</div>
+<div class="flex items-center justify-between p-4 bg-charcoal/50 rounded-2xl border border-border-color/50">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary font-black">SM</div>
+<div>
+<p class="text-sm font-black text-white">Sarah Miller</p>
+<p class="text-xs text-slate-500 font-medium">Editor</p>
+</div>
+</div>
+<span class="px-2.5 py-1 bg-slate-800 text-slate-500 text-[10px] font-black rounded-full">Viewing</span>
+</div>
+<div class="pt-6 border-t border-border-color">
+<p class="text-[10px] font-black text-slate-500 mb-4 uppercase tracking-widest">Activity Feed</p>
+<div class="flex items-center gap-3 mb-3">
+<div class="w-2 h-2 rounded-full bg-primary shadow-sm shadow-primary"></div>
+<p class="text-xs text-slate-300">Sarah updated <span class="text-white font-bold">"Spring Campaign"</span></p>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-slate-700"></div>
+<p class="text-xs text-slate-500">Audit report generated for Client A</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 flex flex-col gap-6">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined font-bold">groups</span>
+<span class="text-sm font-bold tracking-widest uppercase">Scale</span>
+</div>
+<h3 class="text-4xl font-black leading-tight text-white">Team Collaboration: Scale Your Agency</h3>
+<p class="text-lg text-slate-400">
+                Built for teams. Manage multiple clients, assign roles, and share live dashboards without the headache of spreadsheets.
+            </p>
+<div class="space-y-4 mb-4">
+<div class="flex gap-4 p-5 border border-border-color bg-surface/50 rounded-2xl hover:border-primary transition-all group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">verified_user</span>
+<div>
+<p class="font-bold text-white">Granular Permissions</p>
+<p class="text-sm text-slate-500">Control access at the project or tool level.</p>
+</div>
+</div>
+<div class="flex gap-4 p-5 border border-border-color bg-surface/50 rounded-2xl hover:border-primary transition-all group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">share</span>
+<div>
+<p class="font-bold text-white">Client Dashboard Access</p>
+<p class="text-sm text-slate-500">White-label reports you can share directly with clients.</p>
+</div>
+</div>
+</div>
+<button class="w-fit px-8 py-4 bg-primary text-white font-bold rounded-lg hover:brightness-110 transition-all flex items-center gap-2">
+                Create Team Workspace <span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</section>
+<section class="py-28 px-6 bg-charcoal text-center border-t border-border-color relative overflow-hidden">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"></div>
+<div class="max-w-[800px] mx-auto relative z-10">
+<h2 class="text-5xl md:text-6xl font-black mb-8 text-white leading-tight">Ready to dominate the search results?</h2>
+<p class="text-slate-400 text-xl mb-12">
+            Join 10,000+ businesses using Flash SEO to grow their organic traffic faster. Start your 14-day free trial today.
+        </p>
+<div class="flex flex-col sm:flex-row justify-center gap-5">
+<button class="px-12 py-5 bg-primary text-white font-black rounded-2xl text-xl hover:brightness-110 transition-all shadow-xl shadow-primary/25">
+                Start Ranking Now
+            </button>
+<button class="px-12 py-5 bg-surface text-white font-black rounded-2xl text-xl hover:bg-slate-800 transition-colors border border-border-color">
+                Contact Sales
+            </button>
+</div>
+<p class="mt-10 text-sm font-bold text-slate-500 uppercase tracking-widest">No credit card required • Cancel anytime</p>
+</div>
+</section>
+<footer class="py-12 border-t border-border-color px-6 bg-charcoal">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+<div class="flex items-center gap-3">
+<div class="bg-primary p-2 rounded-xl text-white">
+<span class="material-symbols-outlined text-xl">bolt</span>
+</div>
+<span class="font-black text-xl text-white">Flash SEO</span>
+</div>
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="text-xs font-black text-slate-500 hover:text-primary uppercase tracking-widest transition-colors" href="#">Terms</a>
+<a class="text-xs font-black text-slate-500 hover:text-primary uppercase tracking-widest transition-colors" href="#">Privacy</a>
+<a class="text-xs font-black text-slate-500 hover:text-primary uppercase tracking-widest transition-colors" href="#">Cookies</a>
+<a class="text-xs font-black text-slate-500 hover:text-primary uppercase tracking-widest transition-colors" href="#">Security</a>
+</div>
+<p class="text-xs font-medium text-slate-600">© 2024 Flash SEO Inc. All rights reserved.</p>
+</div>
+</footer>
+
+</body></html>
