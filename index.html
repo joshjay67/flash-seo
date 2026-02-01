@@ -286,9 +286,9 @@
 <!-- Supabase Integration -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
-  // Replace these with your actual Supabase credentials
-  const SUPABASE_URL = 'YOUR-SUPABASE-PROJECT-URL'
-  const SUPABASE_ANON_KEY = 'YOUR-SUPABASE-ANON-KEY'
+  // Supabase credentials
+  const SUPABASE_URL = 'https://usaozziabdpckdbansdw.supabase.co'
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVzYW96emlhYmRwY2tkYmFuc2R3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njk5MjI4OTAsImV4cCI6MjA4NTQ5ODg5MH0.iWm9BgzXeIVQRhSitK4tMnNRsnelQHX2wYh1xKHZMVg'
   
   // Initialize Supabase client
   const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
@@ -297,7 +297,7 @@
   async function fetchData() {
     try {
       const { data, error } = await supabase
-        .from('your_table_name')
+        .from('contacts')
         .select('*')
       
       if (error) throw error
@@ -308,23 +308,27 @@
     }
   }
   
-  // Example: Insert data to Supabase
-  async function insertData(newData) {
+  // Example: Insert contact form data to Supabase
+  async function saveContact(name, email, message) {
     try {
       const { data, error } = await supabase
-        .from('your_table_name')
-        .insert([newData])
+        .from('contacts')
+        .insert([{ name: name, email: email, message: message }])
         .select()
       
       if (error) throw error
-      console.log('Data inserted:', data)
+      console.log('Contact saved:', data)
+      alert('Thank you! Your message has been sent successfully.')
       return data
     } catch (error) {
-      console.error('Error inserting data:', error.message)
+      console.error('Error saving contact:', error.message)
+      alert('Sorry, there was an error sending your message. Please try again.')
     }
   }
   
-  // Call this when page loads to test connection
+  // Test connection on page load
+  console.log('Supabase connected! Ready to use.')
+  // Uncomment the line below to test fetching data:
   // fetchData()
 </script>
 
